@@ -14,9 +14,9 @@ from dotenv import load_dotenv
 
 load_dotenv(".env")
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-API_ID = int(os.environ.get("API_ID"))
-API_HASH = os.environ.get("API_HASH")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "5716827359:AAE3NJPyZkXHATL8m3AmLVxFy0-NNhKOOog")
+API_ID = int(os.environ.get("API_ID", "16246834"))
+API_HASH = os.environ.get("API_HASH", "29b3ffa9245c07f05375b92f38e8f13d")
 
 
 bot = Client(
